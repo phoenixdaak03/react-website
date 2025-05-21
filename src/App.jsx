@@ -14,26 +14,26 @@ function App() {
     {
       jobNum: 1,
       company: "PSI Paving",
-      job_title: "Construction worker",
+      job_title: "Construction Worker",
       timeline: "5/19-7/19",
-      experience: "blah blah blah",
+      experience: "Assisted in the construction of roads and parking lots. Worked with heavy machinery and tools. Aquired knowled of paving process and studied the operation of heavy machinery.",
       logoPath: "Images/picsvg_download.svg"
     },
     {
       jobNum: 2,
       company: "Freudenburg Medical",
-      job_title: "Co-op 1",
+      job_title: "Machine and Design Co-op",
       timeline: "1/23-4/23",
-      experience: "blah blah blah",
+      experience: "Conducted engineering design within a machine and tooling design team. Innovated tools regarding razor bload safety on production floor. Proposed and communicated design ideas with health and safety coordinator. Thoroughly worked with SolidWorks CAD software for development models and drawings.",
       logoPath: "Images/freudenburgLogo.svg"
       
     },
     {
       jobNum: 3,
       company: "Fort Knox HRC",
-      job_title: "Co-op 2",
+      job_title: "Computer Engineer Trainee Co-op",
       timeline: "1/24-Present",
-      experience: "blah blah blah",
+      experience: "Application design within Microsoft PowerApps. Developed functional flows within apps with Power Automate. Attended weekly breifs with departemnet and functionals to communicate updates, changes, and future plans.",
       logoPath: "Images/HRCPatch.png"
       
     }
