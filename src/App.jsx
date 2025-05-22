@@ -51,33 +51,37 @@ function App() {
       topic: "Deep Learning",
       logoPath:"./Images/nn.png",
       title: "Image Processing w/ CNNs and Auto Encoding",
+      report: "ProjectReports/FinalProjectReport_PD.pdf",
       description: "Processed infrared and RGB images using deep neural networks"
     },
     {
       projectID: 2,
-      topic: "Data Analytics",
+      topic: "Deep Learning",
       logoPath:"./Images/da.png",
-      title: "Data Analysis w/ Python",
-      description: "Analyzed data using Python and Pandas"
+      title: "Natural Language Processing with RNNs",
+      report: "ProjectReports/HW3_Report_PD.pdf",
+      description: "Analyzed data using recurrent neural networks to classify sentiment of text"
     },
     {
       projectID: 3,
       topic: "Web Development",
       logoPath:"./Images/wd.png",
       title: "Web Development",
-      description: "Developed a web application using React and Node.js"
+      report: "https://phoenixdaak03.github.io/",
+      description: "Developed a personal portfolio website using plain HTML and CSS"
     },
     {
       projectID: 4,
-      topic: "Machine Learning",
+      topic: "Artificial Intelligence",
       logoPath:"./Images/nn.png",
-      title: "Machine Learning w/ Python",
-      description: "Developed a machine learning model using Python and Scikit-learn"
+      title: "Genetic Algorithms",
+      report: "ProjectReports/Project4Report.pdf",
+      description: "Developed a genetic algorithm to solve optimization Traveling Salesman Problem"
     }
   ]
 
   const projectsComponent = projects.map(project=>(
-    <Projects key={project.projectID} projectTitle={project.title} description={project.description} topic={project.topic} logo={project.logoPath}/>
+    <Projects key={project.projectID} projectTitle={project.title} description={project.description} topic={project.topic} logo={project.logoPath} report={project.report}/>
   ))
   
   
@@ -88,10 +92,11 @@ function App() {
         <Image/>
         <Introduction/>
       
-        <div className='flex justify-center my-20'>
+        {/* <div className='flex justify-center my-20'>
           <PreviousWebsite/>
-        </div>
-        <div className='grid grid-cols-3 bg-neutral-700 my-30 h-65 items-center border-y-1 border-neutral-300'>
+        </div> */}
+
+        <div className='lg:grid lg:grid-cols-3 bg-neutral-700 my-20 h-auto border-y-1 border-neutral-300'>
           {jobsComponent}
         </div>
 
@@ -99,7 +104,7 @@ function App() {
 
         
         
-        <div className='grid grid-cols-4 gap-5 mx-50 my-10 h-80 !items-center'>
+        <div className='h-auto place-items-center grid grid-cols-1 lg:grid-cols-4 lg:gap-5 lg:mx-50 my-10 h-80 lg:!items-center'>
           {projectsComponent}
         </div>
         
